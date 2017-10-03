@@ -54,28 +54,14 @@ class ViewController: UIViewController {
             if selectedAnswer ==  questionBank.list[totalProgress].answer{
                 print("Correct!")
                 
-//                let correctAlert = UIAlertController.init(title: "Correct!", message: "Good Job!", preferredStyle: .alert)
-//                let correctAnswer = UIAlertAction.init(title: "Continue", style: .default, handler: { (UIAlertAction) in
-                    self.totalScore += self.scorePerItem
-                    self.updateUI()
-//                })
-//
-//                correctAlert.addAction(correctAnswer)
-//                //correctAlert.view.backgroundColor = UIColor.green
-//                present(correctAlert, animated: true, completion: nil)
+                ProgressHUD.showSuccess("Nice Job!")
+                self.totalScore += self.scorePerItem
+                self.updateUI()
+
                 
             }else{
                 print("Wrong!")
-                
-                let wrongAlert = UIAlertController.init(title: "Wrong!", message: "Try harder!", preferredStyle: .alert)
-                let wrongAnswer = UIAlertAction.init(title: "Continue", style: .default, handler: { (UIAlertAction) in
-                    self.totalScore += self.scorePerItem
-                    self.updateUI()
-                })
-                
-                wrongAlert.addAction(wrongAnswer)
-                //wrongAlert.view.backgroundColor = UIColor.red
-                present(wrongAlert, animated: true, completion: nil)
+                ProgressHUD.showError("Try Again!")
             }
          }
         
