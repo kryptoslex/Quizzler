@@ -54,14 +54,46 @@
 		905EC0A21F836062009BFCC5 /* Quizzler */ = {
 			isa = PBXGroup;
 			children = (
-				905EC0A31F836062009BFCC5 /* AppDelegate.swift */,
-				905EC0A51F836062009BFCC5 /* ViewController.swift */,
-				905EC0A71F836062009BFCC5 /* Main.storyboard */,
-				905EC0AA1F836062009BFCC5 /* Assets.xcassets */,
-				905EC0AC1F836062009BFCC5 /* LaunchScreen.storyboard */,
-				905EC0AF1F836062009BFCC5 /* Info.plist */,
+				905EC0B81F8365A3009BFCC5 /* Resources */,
+				905EC0B71F836599009BFCC5 /* Controller */,
+				905EC0B61F836595009BFCC5 /* View */,
+				905EC0B51F836587009BFCC5 /* Model */,
 			);
 			path = Quizzler;
+			sourceTree = "<group>";
+		};
+		905EC0B51F836587009BFCC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		905EC0B61F836595009BFCC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				905EC0A71F836062009BFCC5 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		905EC0B71F836599009BFCC5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				905EC0A31F836062009BFCC5 /* AppDelegate.swift */,
+				905EC0A51F836062009BFCC5 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		905EC0B81F8365A3009BFCC5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				905EC0AC1F836062009BFCC5 /* LaunchScreen.storyboard */,
+				905EC0AF1F836062009BFCC5 /* Info.plist */,
+				905EC0AA1F836062009BFCC5 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
