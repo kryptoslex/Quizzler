@@ -55,6 +55,7 @@ class ViewController: UIViewController {
                 print("Correct!")
                 
                 ProgressHUD.showSuccess("Nice Job!")
+    
                 self.totalScore += self.scorePerItem
                 self.updateUI()
 
@@ -62,6 +63,9 @@ class ViewController: UIViewController {
             }else{
                 print("Wrong!")
                 ProgressHUD.showError("Try Again!")
+                self.totalScore += self.scorePerItem
+                self.updateUI()
+
             }
          }
         
