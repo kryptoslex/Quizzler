@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9031EC691F836EE0004C6680 /* Rounded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9031EC681F836EE0004C6680 /* Rounded.swift */; };
 		905EC0A41F836062009BFCC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905EC0A31F836062009BFCC5 /* AppDelegate.swift */; };
 		905EC0A61F836062009BFCC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 905EC0A51F836062009BFCC5 /* ViewController.swift */; };
 		905EC0A91F836062009BFCC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 905EC0A71F836062009BFCC5 /* Main.storyboard */; };
@@ -15,13 +16,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9031EC681F836EE0004C6680 /* Rounded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rounded.swift; sourceTree = "<group>"; };
 		905EC0A01F836062009BFCC5 /* Quizzler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizzler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		905EC0A31F836062009BFCC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		905EC0A51F836062009BFCC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		905EC0A81F836062009BFCC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		905EC0AA1F836062009BFCC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		905EC0AD1F836062009BFCC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		905EC0AF1F836062009BFCC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		905EC0BA1F836BE3009BFCC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Quizzler/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				905EC0A71F836062009BFCC5 /* Main.storyboard */,
+				9031EC681F836EE0004C6680 /* Rounded.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -90,8 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				905EC0AC1F836062009BFCC5 /* LaunchScreen.storyboard */,
-				905EC0AF1F836062009BFCC5 /* Info.plist */,
 				905EC0AA1F836062009BFCC5 /* Assets.xcassets */,
+				905EC0BA1F836BE3009BFCC5 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				905EC0A61F836062009BFCC5 /* ViewController.swift in Sources */,
+				9031EC691F836EE0004C6680 /* Rounded.swift in Sources */,
 				905EC0A41F836062009BFCC5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kryptoslex.Quizzler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kryptoslex.Quizzler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
